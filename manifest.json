@@ -1,11 +1,11 @@
 {
   "display_name": "ST MusicPlayer",
-  "loading_order": 15,
+  "loading_order": 50,
   "requires": [],
   "optional": [],
   "js": "index.js",
   "css": "style.css",
-  "author": "OpenAI Codex",
+  "author": "quiet-moss (with ChatGPT/Codex)",
   "version": "1.0.0",
-  "homePage": "https://github.com/SillyTavern/SillyTavern"
+  "homePage": "https://github.com/quiet-moss/ST-MusicPlayer"
 }
