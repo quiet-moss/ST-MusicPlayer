@@ -48,11 +48,11 @@
 > QQ_COOKIE：QQ音乐账号 Cookie；格式示例：pgv_pvid=123243……（复制任意请求的完整Cookie值即可）
 > ACCESS_TOKEN：自定义前端鉴权密钥，可以使用UUID；请记住此时设置的ACCESS_TOKEN，之后将再次使用
 
-**⚠️重要提示⚠️**
+**⚠️ 重要提示 ⚠️**
 - COOKIE 与 ACCESS_TOKEN 的变量类型必须设置为 **密钥** ！   
 - 此密钥一经部署将不再可见，若遗忘密钥，可轮换此密钥
 
-**如何获取Cookie**：
+**❓ 如何获取Cookie**：
 - 登录你所使用的音乐平台网页版
 - 选择开发者工具（F12），打开网络标签页
 - 刷新一次网页（F5）或进行任意请求，复制任意请求的Cookie值
@@ -133,10 +133,13 @@ window.STMusicPlayer.playByUrl({
 
 网易云音乐与QQ音乐的 Worker 采用统一的接口规范。所有接口均要求使用 POST 请求，并携带以下请求头：
 
- `Content-Type: application/json`
- `X-Access-Token: <ACCESS_TOKEN>`
+```json
+ Content-Type: application/json
+ X-Access-Token: <ACCESS_TOKEN>
+```
  
 成功返回格式：
+
 ```json
 {
   "ok": true,
@@ -238,6 +241,6 @@ window.STMusicPlayer.playByUrl({
 - `data.returnedCount`
 - `data.songs[]`
 
-> id 需传入对应平台的专辑数字 ID（QQ 音乐额外支持 MID）。 
+> id 需传入对应平台的专辑数字 ID（QQ 音乐额外支持 MID）。   
 > 返回专辑基本信息及内部曲目列表，同样最多返回前 1000 首歌曲。
 
