@@ -2257,7 +2257,7 @@ async function mountUI() {
   drawer.className = "stmp-drawer inline-drawer";
   drawer.innerHTML = `
     <div class="inline-drawer-toggle inline-drawer-header">
-      <b>ST Music Player</b>
+      <b>MusicPlayer</b>
       <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
     </div>
     <div class="inline-drawer-content">${buildSettingsMarkup()}</div>
