@@ -133,7 +133,7 @@ window.STMusicPlayer.playByUrl({
 
 网易云音乐与QQ音乐的 Worker 采用统一的接口规范。所有接口均要求使用 POST 请求，并携带以下请求头：
 
-```json
+```
  Content-Type: application/json
  X-Access-Token: <ACCESS_TOKEN>
 ```
